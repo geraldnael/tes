@@ -1,0 +1,44 @@
+/* src/styles/forms.css */
+.form-card {
+  background-color: var(--color-card-background);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='password'],
+.form-group textarea {
+  width: calc(100% - 20px); /* Adjust for padding */
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 80px;
+}
+
+.form-card button[type='submit'] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}

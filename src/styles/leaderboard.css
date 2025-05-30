@@ -1,0 +1,57 @@
+/* src/styles/leaderboard.css */
+.leaderboard-page {
+  padding: 20px 0;
+}
+
+.leaderboard-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--color-primary-dark);
+}
+
+.leaderboard-list {
+  background-color: var(--color-card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* For rounded corners on first/last item */
+}
+
+.leaderboard-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.leaderboard-item:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-item:hover {
+  background-color: #f9f9f9;
+}
+
+.leaderboard-user-info {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.leaderboard-score {
+  font-weight: bold;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+}

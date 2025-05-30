@@ -1,0 +1,17 @@
+/* src/styles/variables.css */
+:root {
+  --color-primary: #3f51b5; /* Indigo */
+  --color-primary-dark: #303f9f;
+  --color-accent: #ff4081; /* Pink */
+  --color-text: #333;
+  --color-text-light: #666;
+  --color-background: #f4f7f6;
+  --color-border: #ccc;
+  --color-card-background: #ffffff;
+  --color-success: #4caf50;
+  --color-error: #f44336;
+
+  --color-vote-up: #4caf50; /* Hijau */
+  --color-vote-down: #f44336; /* Merah */
+  --color-vote-neutral: #9e9e9e; /* Abu-abu */
+}

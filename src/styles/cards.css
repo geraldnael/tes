@@ -1,0 +1,77 @@
+/* src/styles/cards.css */
+.thread-card {
+  background-color: var(--color-card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.thread-card:hover {
+  transform: translateY(-5px);
+}
+
+.thread-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.thread-card-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.thread-card-title a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.thread-card-title a:hover {
+  text-decoration: underline;
+}
+
+.thread-card-category {
+  background-color: #e0e0e0;
+  color: #555;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.thread-card-body {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin-bottom: 15px;
+  overflow: hidden; /* Ensure truncated body doesn't cause overflow */
+}
+
+.thread-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.thread-card-meta {
+  display: flex;
+  align-items: center;
+}
+
+.thread-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.comments-count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

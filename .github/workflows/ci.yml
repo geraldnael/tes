@@ -1,0 +1,27 @@
+# .github/workflows/ci.yml
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches:
+      - master # Alur kerja ini akan berjalan ketika ada Pull Request ke cabang master
+
+jobs:
+  automation-test-job:
+    runs-on: ubuntu-latest # Jalankan job ini di runner Ubuntu terbaru
+
+    steps:
+      - name: Checkout kode
+        uses: actions/checkout@v4 # Gunakan versi actions/checkout terbaru
+
+      - name: Siapkan Node.js
+        uses: actions/setup-node@v4 # Gunakan versi actions/setup-node terbaru
+        with:
+          node-version: '18' # Tentukan versi Node.js secara eksplisit, tanpa matrix
+
+      - name: Instal dependensi dan Jalankan semua pengujian & linting
+        run: |
+          npm install
+          # Tambahkan node_modules/.bin ke PATH agar react-scripts dan lainnya ditemukan
+          export PATH=$(npm bin):$PATH
+          npm run ci:test

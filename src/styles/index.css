@@ -1,0 +1,70 @@
+/* src/styles/index.css */
+@import './variables.css';
+@import './buttons.css';
+@import './forms.css';
+@import './cards.css';
+@import './loading-bar.css';
+@import './Header.css';
+@import './NotFound.css';
+@import './auth-pages.css';
+@import './homepage.css';
+@import './detail-thread.css';
+@import './comments.css';
+@import './new-thread-page.css';
+@import './leaderboard.css';
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  margin-top: 0;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img.avatar-small {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+img.avatar-medium {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.dot-separator {
+  margin: 0 5px;
+  color: var(--color-text-light);
+}
+
+.fa-solid {
+  margin-right: 5px;
+}

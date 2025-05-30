@@ -1,0 +1,78 @@
+/* src/styles/buttons.css */
+button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Primary button style */
+.button-primary {
+  background-color: var(--color-primary);
+}
+.button-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Secondary button style (example) */
+.button-secondary {
+  background-color: #6c757d;
+}
+.button-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Danger button style (example) */
+.button-danger {
+  background-color: var(--color-error);
+}
+.button-danger:hover {
+  background-color: #c82333;
+}
+
+/* Vote buttons */
+.vote-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.vote-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--color-vote-neutral);
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.vote-button:hover {
+  background-color: #757575;
+}
+
+.vote-button.voted-up {
+  background-color: var(--color-vote-up);
+}
+.vote-button.voted-up:hover {
+  background-color: #43a047;
+}
+
+.vote-button.voted-down {
+  background-color: var(--color-vote-down);
+}
+.vote-button.voted-down:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,76 @@
+/* src/styles/homepage.css */
+.homepage {
+  padding: 20px 0;
+}
+
+.category-filter {
+  background-color: var(--color-card-background);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.category-filter h3 {
+  margin: 0 10px 0 0;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.category-filter button {
+  background-color: #e0e0e0;
+  color: #555;
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.category-filter button:hover {
+  background-color: #d0d0d0;
+}
+
+.category-filter button.active-category {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+.category-filter button.active-category:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.threads-list {
+  display: grid;
+  gap: 20px;
+}
+
+.add-thread-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--color-accent);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  z-index: 100;
+}
+
+.add-thread-button:hover {
+  background-color: #c51162;
+}

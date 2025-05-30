@@ -1,0 +1,35 @@
+/* src/styles/loading-bar.css */
+.loading-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; /* Increased height for visibility */
+  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+  z-index: 9999; /* Ensure it's on top */
+  overflow: hidden; /* Hide overflow of the animation */
+}
+
+.loading-bar {
+  height: 100%;
+  background-color: var(--color-accent); /* Use accent color for loading bar */
+  width: 20%; /* Initial width */
+  position: absolute;
+  left: -20%; /* Start off-screen */
+  animation: loading-animation 1.5s infinite ease-in-out;
+}
+
+@keyframes loading-animation {
+  0% {
+    left: -20%;
+    width: 20%;
+  }
+  50% {
+    left: 100%;
+    width: 20%;
+  }
+  100% {
+    left: -20%;
+    width: 20%;
+  }
+}
