@@ -64,7 +64,7 @@ describe('threadsReducer', () => {
     const nextState = threadsReducer(initialState, action);
 
     // Assert
-    expect(nextState.list[0].upVotesBy).toEqual(['user-3']);
+    expect(nextState.list[0].upVotesBy).toEqual(['user-FAIL']);
     expect(nextState.list[0].downVotesBy).toEqual([]);
     expect(nextState.detail.upVotesBy).toEqual(['user-3']);
     expect(nextState.detail.downVotesBy).toEqual([]);
