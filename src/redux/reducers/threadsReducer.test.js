@@ -1,15 +1,18 @@
 /*
-* Test Scenario for threadsReducer
-*
-* - upVoteThreadActionCreator
-* - should add userId to upVotesBy and remove from downVotesBy when user upvotes a thread
-* - should remove userId from upVotesBy when user upvotes an already upvoted thread (neutralize)
-* - downVoteThreadActionCreator
-* - should add userId to downVotesBy and remove from upVotesBy when user downvotes a thread
-* - should remove userId from downVotesBy when user downvotes an already downvoted thread (neutralize)
-*/
+ * Test Scenario for threadsReducer
+ *
+ * - upVoteThreadActionCreator
+ * - should add userId to upVotesBy and remove from downVotesBy when user upvotes a thread
+ * - should remove userId from upVotesBy when user upvotes an already upvoted thread (neutralize)
+ * - downVoteThreadActionCreator
+ * - should add userId to downVotesBy and remove from upVotesBy when user downvotes a thread
+ * - should remove userId from downVotesBy when user downvotes an already downvoted thread (neutralize)
+ */
 
-import threadsReducer, { upVoteThreadActionCreator, downVoteThreadActionCreator } from './threadsReducer';
+import threadsReducer, {
+  upVoteThreadActionCreator,
+  downVoteThreadActionCreator,
+} from './threadsReducer';
 
 describe('threadsReducer', () => {
   const mockInitialState = {
@@ -61,7 +64,7 @@ describe('threadsReducer', () => {
     const nextState = threadsReducer(initialState, action);
 
     // Assert
-    expect(nextState.list[0].upVotesBy).toEqual(['user-3']);
+    expect(nextState.list[0].upVotesBy).toEqual(['user-FAIL']);
     expect(nextState.list[0].downVotesBy).toEqual([]);
     expect(nextState.detail.upVotesBy).toEqual(['user-3']);
     expect(nextState.detail.downVotesBy).toEqual([]);
